@@ -1,0 +1,96 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R /F3 7 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 3995 >>
+stream
+0.82 0.83 0.85 RG 0.8 w
+BT /F2 22 Tf 192.0 746.0 Td (Euler William Robert) Tj ET
+BT /F1 12 Tf 245.0 718.0 Td (Full-Stack Developer) Tj ET
+BT /F1 9.5 Tf 196.8 702.0 Td (United Kingdom  |  contacteulerfault@gmail.com) Tj ET
+BT /F2 10.5 Tf 50.0 674.5 Td (SUMMARY) Tj ET
+50.0 668.5 m 562.0 668.5 l S
+BT /F1 9.5 Tf 50.0 652.5 Td (Freelance full-stack developer helping clients build, improve, and maintain websites, online stores, mobile) Tj ET
+BT /F1 9.5 Tf 50.0 639.5 Td (apps, dashboards, API integrations, and automation systems. Experienced with WordPress, WooCommerce,) Tj ET
+BT /F1 9.5 Tf 50.0 626.5 Td (Shopify, React, Next.js, Node.js, PHP, Laravel, Firebase, Supabase, and AI chatbot integrations. Focused on) Tj ET
+BT /F1 9.5 Tf 50.0 613.5 Td (clear communication, clean code, responsive design, testing, and reliable delivery.) Tj ET
+BT /F2 10.5 Tf 50.0 592.5 Td (EXPERIENCE) Tj ET
+50.0 586.5 m 562.0 586.5 l S
+BT /F2 11 Tf 50.0 570.5 Td (Full-Stack Developer) Tj ET
+BT /F1 9.5 Tf 438.5 570.5 Td (February 2025 - March 2026) Tj ET
+BT /F3 9.5 Tf 50.0 556.5 Td (Freelance / Self-Employed) Tj ET
+BT /F1 9.5 Tf 50.0 541.5 Td (-) Tj ET
+BT /F1 9.5 Tf 62.0 541.5 Td (Built, improved, and maintained websites, online stores, mobile apps, dashboards, API integrations, and) Tj ET
+BT /F1 9.5 Tf 62.0 528.5 Td (automation systems for clients.) Tj ET
+BT /F1 9.5 Tf 50.0 513.5 Td (-) Tj ET
+BT /F1 9.5 Tf 62.0 513.5 Td (Worked across WordPress, WooCommerce, Shopify, React, Next.js, Node.js, PHP, Laravel, Firebase,) Tj ET
+BT /F1 9.5 Tf 62.0 500.5 Td (Supabase, and AI chatbot integrations.) Tj ET
+BT /F1 9.5 Tf 50.0 485.5 Td (-) Tj ET
+BT /F1 9.5 Tf 62.0 485.5 Td (Delivered with a focus on clear communication, clean code, responsive design, testing, and reliable) Tj ET
+BT /F1 9.5 Tf 62.0 472.5 Td (handoff.) Tj ET
+BT /F2 11 Tf 50.0 449.5 Td (WordPress & WooCommerce Developer) Tj ET
+BT /F1 9.5 Tf 424.2 449.5 Td (December 2023 - February 2025) Tj ET
+BT /F3 9.5 Tf 50.0 435.5 Td (Freelance) Tj ET
+BT /F1 9.5 Tf 50.0 420.5 Td (-) Tj ET
+BT /F1 9.5 Tf 62.0 420.5 Td (Developed and optimized WordPress and WooCommerce websites for small businesses and online stores.) Tj ET
+BT /F1 9.5 Tf 50.0 405.5 Td (-) Tj ET
+BT /F1 9.5 Tf 62.0 405.5 Td (Handled custom themes, plugin setup, checkout configuration, payment integration, and product catalog) Tj ET
+BT /F1 9.5 Tf 62.0 392.5 Td (management.) Tj ET
+BT /F1 9.5 Tf 50.0 377.5 Td (-) Tj ET
+BT /F1 9.5 Tf 62.0 377.5 Td (Improved SEO basics, page speed, bug fixes, and mobile responsiveness.) Tj ET
+BT /F2 11 Tf 50.0 354.5 Td (Shopify Developer) Tj ET
+BT /F1 9.5 Tf 457.5 354.5 Td (August 2019 - May 2023) Tj ET
+BT /F3 9.5 Tf 50.0 340.5 Td (Freelance) Tj ET
+BT /F1 9.5 Tf 50.0 325.5 Td (-) Tj ET
+BT /F1 9.5 Tf 62.0 325.5 Td (Built and customized Shopify stores, including product pages, collection pages, cart adjustments, and) Tj ET
+BT /F1 9.5 Tf 62.0 312.5 Td (theme customization.) Tj ET
+BT /F1 9.5 Tf 50.0 297.5 Td (-) Tj ET
+BT /F1 9.5 Tf 62.0 297.5 Td (Implemented responsive layouts and basic SEO setup for client storefronts.) Tj ET
+BT /F1 9.5 Tf 50.0 282.5 Td (-) Tj ET
+BT /F1 9.5 Tf 62.0 282.5 Td (Helped clients improve store structure, user experience, and conversion-focused pages.) Tj ET
+BT /F2 10.5 Tf 50.0 251.5 Td (TECHNICAL SKILLS) Tj ET
+50.0 245.5 m 562.0 245.5 l S
+BT /F2 9.5 Tf 50.0 229.5 Td (Platforms:) Tj ET
+BT /F1 9.5 Tf 104.2 229.5 Td (Shopify, WordPress, WooCommerce) Tj ET
+BT /F2 9.5 Tf 50.0 216.5 Td (Frontend:) Tj ET
+BT /F1 9.5 Tf 99.5 216.5 Td (React, Next.js, responsive layouts, conversion-focused pages) Tj ET
+BT /F2 9.5 Tf 50.0 203.5 Td (Backend:) Tj ET
+BT /F1 9.5 Tf 94.8 203.5 Td (Node.js, PHP, Laravel, API integrations, automation) Tj ET
+BT /F2 9.5 Tf 50.0 190.5 Td (Services:) Tj ET
+BT /F1 9.5 Tf 99.5 190.5 Td (Firebase, Supabase, AI chatbot integrations, payment setup) Tj ET
+BT /F2 9.5 Tf 50.0 177.5 Td (Delivery:) Tj ET
+BT /F1 9.5 Tf 99.5 177.5 Td (Theme customization, SEO basics, speed optimization, testing) Tj ET
+
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000261 00000 n 
+0000004308 00000 n 
+0000004378 00000 n 
+0000004453 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+4531
+%%EOF
