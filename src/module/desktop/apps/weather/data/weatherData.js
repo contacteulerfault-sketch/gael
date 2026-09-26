@@ -1,6 +1,6 @@
 const WEATHER_DATA = {
-  delhi: {
-    name: "Delhi",
+  riodejaneiro: {
+    name: "Rio de Janeiro",
     tempC: 29,
     tempF: 85,
     condition: "Sunny",
@@ -127,8 +127,8 @@ const WEATHER_DATA = {
       },
     ],
   },
-  uttarpradesh: {
-    name: "Uttar Pradesh",
+  saopaulo: {
+    name: "São Paulo",
     tempC: 28,
     tempF: 82,
     condition: "Haze",
@@ -255,8 +255,8 @@ const WEATHER_DATA = {
       },
     ],
   },
-  jaipur: {
-    name: "Jaipur",
+  brasilia: {
+    name: "Brasília",
     tempC: 32,
     tempF: 90,
     condition: "Sunny",

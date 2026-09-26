@@ -1,4 +1,4 @@
-const OWNER_NAME = "Euler William Robert";
+const OWNER_NAME = "Gael Alves";
 const SITE_NAME = `${OWNER_NAME} - macOS Portfolio`;
 const SITE_DESCRIPTION =
   "Interactive macOS-inspired developer portfolio with desktop apps, mobile views, projects, resume, and Siri assistant.";

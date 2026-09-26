@@ -6,14 +6,15 @@ const useWeather = () => {
     (typeof process !== "undefined" && process.env?.NEXT_PUBLIC_WEATHER_API_URL) ||
     "https://wttr.in";
   const [citiesData, setCitiesData] = useState(WEATHER_DATA);
-  const [activeCityId, setActiveCityId] = useState("delhi");
+  const [activeCityId, setActiveCityId] = useState("riodejaneiro");
   const [searchQuery, setSearchQuery] = useState("");
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [unitMode, setUnitMode] = useState("both");
 
-  const activeCity = citiesData[activeCityId] || citiesData.delhi || WEATHER_DATA.delhi;
+  const activeCity =
+    citiesData[activeCityId] || citiesData.riodejaneiro || WEATHER_DATA.riodejaneiro;
 
   const fetchCityWeather = useCallback(
     async (cityName, isNewCity = false) => {
@@ -137,7 +138,7 @@ const useWeather = () => {
   };
 
   useEffect(() => {
-    const initialCities = ["Delhi", "Uttar Pradesh", "Jaipur"];
+    const initialCities = ["Rio de Janeiro", "Sao Paulo", "Brasilia"];
     initialCities.forEach((city) => {
       fetchCityWeather(city);
     });

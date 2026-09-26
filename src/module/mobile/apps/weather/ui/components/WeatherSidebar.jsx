@@ -59,7 +59,7 @@ const WeatherSidebar = ({
                 <div>
                   <h4 className="font-bold text-lg tracking-tight leading-none">{city.name}</h4>
                   <p className="text-[10px] opacity-75 font-semibold mt-1">
-                    {key === "delhi" ? "My Location" : "Local Weather"}
+                    {key === "riodejaneiro" ? "My Location" : "Local Weather"}
                   </p>
                 </div>
                 <span className="text-3xl font-light tracking-tighter leading-none">

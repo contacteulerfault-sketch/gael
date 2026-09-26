@@ -239,7 +239,7 @@ const ABOUT_LOCATION = {
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
       description: [
-        "Hey! I'm Euler 👋, a freelance full-stack developer based in the United Kingdom.",
+        "Hey! I'm Gael 👋, a freelance full-stack developer based in Brazil.",
         "I help clients build and maintain websites, online stores, dashboards, API integrations, and automation systems across Shopify, WordPress, WooCommerce, React, Next.js, Node.js, PHP, and Laravel.",
         "I focus on clear communication, clean code, responsive design, testing, and reliable delivery.",
       ],

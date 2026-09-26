@@ -2,7 +2,17 @@ import { useEffect } from "react";
 import { Terminal as XTerm } from "xterm";
 import "xterm/css/xterm.css";
 import { FitAddon } from "@xterm/addon-fit";
-import { techStack, projects, GITHUB_PROFILE, PORTFOLIO_URL, EMAIL } from "@constants";
+import {
+  techStack,
+  projects,
+  GITHUB_PROFILE,
+  LINKEDIN_URL,
+  WHATSAPP_URL,
+  PORTFOLIO_URL,
+  EMAIL,
+  PHONE,
+  OWNER_LOCATION,
+} from "@constants";
 import useWindowsStore from "@store/window";
 
 const TerminalInput = ({ terminalRef, xtermRef, fitAddonRef, commandRef }) => {
@@ -19,7 +29,7 @@ const TerminalInput = ({ terminalRef, xtermRef, fitAddonRef, commandRef }) => {
 
     const setupHandlers = (t) => {
       const prompt = () => {
-        t.write("\r\n\x1b[1;32meuler@macbook ~ %\x1b[0m ");
+        t.write("\r\n\x1b[1;32mgael@macbook ~ %\x1b[0m ");
       };
 
       const println = (msg) => {
@@ -103,7 +113,7 @@ const TerminalInput = ({ terminalRef, xtermRef, fitAddonRef, commandRef }) => {
                 "\x1b[1;38;2;16;185;129mwhoami\x1b[0m    \x1b[38;2;75;85;99m- Print current user\x1b[0m",
               );
               println(
-                "\x1b[1;38;2;16;185;129mabout\x1b[0m     \x1b[38;2;75;85;99m- About Euler William Robert\x1b[0m",
+                "\x1b[1;38;2;16;185;129mabout\x1b[0m     \x1b[38;2;75;85;99m- About Gael Alves\x1b[0m",
               );
               println(
                 "\x1b[1;38;2;16;185;129mtechstack\x1b[0m \x1b[38;2;75;85;99m- Display tech stack\x1b[0m",
@@ -125,20 +135,31 @@ const TerminalInput = ({ terminalRef, xtermRef, fitAddonRef, commandRef }) => {
               println(new Date().toString());
               break;
             case "whoami":
-              println("\x1b[38;2;75;85;99meuler\x1b[0m");
+              println("\x1b[38;2;75;85;99mgael\x1b[0m");
               break;
             case "about":
-              println("\x1b[1;38;2;219;39;119m=== About Euler William Robert ===\x1b[0m");
+              println("\x1b[1;38;2;219;39;119m=== About Gael Alves ===\x1b[0m");
               println(
-                "\x1b[1;38;2;16;185;129mName:      \x1b[38;2;75;85;99mEuler William Robert\x1b[0m",
+                "\x1b[1;38;2;16;185;129mName:      \x1b[38;2;75;85;99mGael Alves\x1b[0m",
               );
               println(
                 "\x1b[1;38;2;16;185;129mRole:      \x1b[38;2;75;85;99mFull-Stack Developer & Designer\x1b[0m",
               );
-              println("\x1b[1;38;2;16;185;129mLocation:  \x1b[38;2;75;85;99mUnited Kingdom\x1b[0m");
+              println(
+                `\x1b[1;38;2;16;185;129mLocation:  \x1b[38;2;75;85;99m${OWNER_LOCATION}\x1b[0m`,
+              );
               println(`\x1b[1;38;2;16;185;129mEmail:     \x1b[4;38;2;37;99;235m${EMAIL}\x1b[0m`);
               println(
+                `\x1b[1;38;2;16;185;129mWhatsApp:  \x1b[4;38;2;37;99;235m${PHONE}\x1b[0m`,
+              );
+              println(
+                `\x1b[1;38;2;16;185;129mChat:      \x1b[4;38;2;37;99;235m${WHATSAPP_URL}\x1b[0m`,
+              );
+              println(
                 `\x1b[1;38;2;16;185;129mGitHub:    \x1b[4;38;2;37;99;235m${GITHUB_PROFILE}\x1b[0m`,
+              );
+              println(
+                `\x1b[1;38;2;16;185;129mLinkedIn:  \x1b[4;38;2;37;99;235m${LINKEDIN_URL}\x1b[0m`,
               );
               println(
                 `\x1b[1;38;2;16;185;129mPortfolio: \x1b[4;38;2;37;99;235m${PORTFOLIO_URL}\x1b[0m`,
@@ -154,7 +175,7 @@ const TerminalInput = ({ terminalRef, xtermRef, fitAddonRef, commandRef }) => {
               break;
             case "sudo":
               println(
-                "\x1b[31meuler is not in the sudoers file. This incident will be reported.\x1b[0m",
+                "\x1b[31mgael is not in the sudoers file. This incident will be reported.\x1b[0m",
               );
               break;
             case "techstack":

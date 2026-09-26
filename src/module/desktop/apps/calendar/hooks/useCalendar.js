@@ -37,12 +37,12 @@ const useCalendar = () => {
     return [
       {
         id: "1",
-        title: "Euler's Birthday 🎂",
+        title: "Gael's Birthday 🎂",
         date: "2026-05-26",
         start: "00:00",
         end: "23:59",
         category: "birthdays",
-        desc: "Celebrate Euler's birthday and review macos portfolio improvements!",
+        desc: "Celebrate Gael's birthday and review macos portfolio improvements!",
       },
       {
         id: "2",

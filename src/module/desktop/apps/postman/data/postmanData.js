@@ -14,7 +14,7 @@ const MOCK_COLLECTIONS = [
         name: "Update Profile",
         method: "PUT",
         url: "https://api.dev/v1/profile",
-        body: '{\n  "name": "Euler William Robert",\n  "role": "Senior Full Stack Engineer",\n  "location": "London, United Kingdom"\n}',
+        body: '{\n  "name": "Gael Alves",\n  "role": "Senior Full Stack Engineer",\n  "location": "Rio de Janeiro, Brazil"\n}',
       },
       {
         id: "req_login",

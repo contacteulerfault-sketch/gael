@@ -12,11 +12,11 @@ const CallOverlay = ({
 }) => {
   const [videoError, setVideoError] = useState(false);
 
-  const isEuler = activeChat.name?.toLowerCase().includes("euler");
+  const isOwner = activeChat.name?.toLowerCase().includes("gael");
   const isJames = activeChat.name?.toLowerCase().includes("james");
   const isThomas = activeChat.name?.toLowerCase().includes("thomas");
 
-  const videoUrl = isEuler
+  const videoUrl = isOwner
     ? process.env.NEXT_PUBLIC_VIDEOCALL_EULER
     : isJames
       ? process.env.NEXT_PUBLIC_VIDEOCALL_JAMES_WALKER
@@ -24,7 +24,7 @@ const CallOverlay = ({
         ? process.env.NEXT_PUBLIC_VIDEOCALL_THOMAS_REED
         : "";
 
-  const showVideo = (isEuler || isJames || isThomas) && videoUrl && !videoError;
+  const showVideo = (isOwner || isJames || isThomas) && videoUrl && !videoError;
   return (
     <div className="absolute inset-0 bg-[#0d0d0e] text-white z-40 flex flex-col items-center justify-between py-10 px-6 animate-fade-in overflow-hidden select-none rounded-b-xl group">
       {/* Full-screen Background Stream or Dynamic Gradient */}

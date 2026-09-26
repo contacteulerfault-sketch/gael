@@ -15,17 +15,17 @@ const CallInProgress = ({
 }) => {
   const [videoError, setVideoError] = useState(false);
 
-  const isEuler = activeCall.name?.toLowerCase().includes("euler");
+  const isOwner = activeCall.name?.toLowerCase().includes("gael");
   const isJames = activeCall.name?.toLowerCase().includes("james");
   const isThomas = activeCall.name?.toLowerCase().includes("thomas");
-  const videoUrl = isEuler
+  const videoUrl = isOwner
     ? process.env.NEXT_PUBLIC_VIDEOCALL_EULER
     : isJames
       ? process.env.NEXT_PUBLIC_VIDEOCALL_JAMES_WALKER
       : isThomas
         ? process.env.NEXT_PUBLIC_VIDEOCALL_THOMAS_REED
         : "";
-  const showVideo = (isEuler || isJames || isThomas) && videoUrl && !videoError;
+  const showVideo = (isOwner || isJames || isThomas) && videoUrl && !videoError;
 
   return (
     <div className="absolute inset-0 bg-neutral-950 text-white z-40 flex flex-col justify-between overflow-hidden select-none h-full rounded-b-xl group">

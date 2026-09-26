@@ -4,15 +4,22 @@ const trimTrailingSlash = (value) => value?.replace(/\/+$/, "");
 const SITE_URL = trimTrailingSlash(
   process.env.NEXT_PUBLIC_PORTFOLIO_URL || "http://localhost:3000",
 );
-const OWNER_NAME = "Euler William Robert";
+const OWNER_NAME = "Gael Alves";
 const SITE_NAME = `${OWNER_NAME} - macOS Portfolio`;
 const SITE_DESCRIPTION =
   "An interactive macOS-inspired developer portfolio featuring functional apps, an AI-powered Siri assistant, music player, terminal, weather, maps, resume preview, and project showcases built with Next.js, React, and GSAP.";
 const OG_IMAGE = "/readme/desktop.png";
-const GITHUB_PROFILE = process.env.NEXT_PUBLIC_GITHUB_PROFILE || "";
-const EMAIL = process.env.NEXT_PUBLIC_EMAIL || "contacteulerfault@gmail.com";
+const GITHUB_PROFILE =
+  process.env.NEXT_PUBLIC_GITHUB_PROFILE || "https://github.com/gaelalves.business-ops";
+const LINKEDIN_URL =
+  process.env.NEXT_PUBLIC_LINKEDIN_URL || "https://www.linkedin.com/in/gael-alves";
+const EMAIL = process.env.NEXT_PUBLIC_EMAIL || "gaelalves.business@gmail.com";
+const PHONE = process.env.NEXT_PUBLIC_PHONE || "+44 7598 990588";
+const WHATSAPP_URL =
+  process.env.NEXT_PUBLIC_WHATSAPP_URL ||
+  (PHONE ? `https://wa.me/${PHONE.replace(/\D/g, "")}` : "");
 
-const sameAs = [GITHUB_PROFILE].filter(Boolean);
+const sameAs = [GITHUB_PROFILE, LINKEDIN_URL, WHATSAPP_URL].filter(Boolean);
 const jsonLd = [
   {
     "@context": "https://schema.org",
@@ -31,7 +38,13 @@ const jsonLd = [
     name: OWNER_NAME,
     url: SITE_URL,
     email: `mailto:${EMAIL}`,
+    telephone: PHONE,
     jobTitle: "Full Stack Developer",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Rio de Janeiro",
+      addressCountry: "BR",
+    },
     sameAs,
   },
 ];

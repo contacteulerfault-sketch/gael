@@ -2,13 +2,13 @@ import { GITHUB_PROFILE } from "@constants";
 
 export const INITIAL_CONVERSATIONS = [
   {
-    id: "euler",
-    name: "Euler (Developer)",
+    id: "gael",
+    name: "Gael (Developer)",
     avatarColor: "bg-gradient-to-tr from-blue-500 to-indigo-500",
-    initials: "EW",
+    initials: "GA",
     avatar: "/images/owner-avatar.webp",
     unread: true,
-    email: "contacteulerfault@gmail.com",
+    email: "gaelalves.business@gmail.com",
     github: GITHUB_PROFILE,
     messages: [
       {
@@ -43,7 +43,7 @@ export const INITIAL_CONVERSATIONS = [
     messages: [
       {
         id: 1,
-        text: "Hey Euler, did you check the new desktop mockup?",
+        text: "Hey Gael, did you check the new desktop mockup?",
         sender: "them",
         time: "Yesterday",
       },
@@ -68,7 +68,7 @@ export const INITIAL_CONVERSATIONS = [
     messages: [
       {
         id: 1,
-        text: "Hey Euler! I'm online now. Let me know if you need help with coding.",
+        text: "Hey Gael! I'm online now. Let me know if you need help with coding.",
         sender: "them",
         time: "Yesterday",
       },

@@ -31,7 +31,7 @@ const ContactCard = ({ _label, email, phone, copied, onCopy }) => (
         className="flex items-center gap-3 cursor-pointer group"
         onClick={() => onCopy(phone, "phone")}
       >
-        <p className="hover:text-blue-500 transition-colors">{phone}</p>
+        <p className="hover:text-blue-500 transition-colors">WhatsApp {phone}</p>
         {copied === "phone" ? (
           <Check size={14} className="text-green-500 animate-in zoom-in" />
         ) : (

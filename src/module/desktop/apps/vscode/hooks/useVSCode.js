@@ -201,10 +201,10 @@ const useVSCode = () => {
           output = [args.join(" ") || ""];
           break;
         case "pwd":
-          output = ["/Users/euler/workspace/portfolio"];
+          output = ["/Users/gael/workspace/portfolio"];
           break;
         case "whoami":
-          output = ["euler"];
+          output = ["gael"];
           break;
         case "date":
           output = [new Date().toString()];
@@ -295,13 +295,13 @@ const useVSCode = () => {
           } else if (sub === "log") {
             output = [
               "commit a1b2c3d (HEAD -> main, origin/main)",
-              "Author: Euler William Robert <contacteulerfault@gmail.com>",
+              "Author: Gael Alves <gaelalves.business@gmail.com>",
               `Date:   ${new Date().toDateString()}`,
               "",
               "    Initial portfolio setup",
               "",
               "commit e4f5g6h",
-              "Author: Euler William Robert <contacteulerfault@gmail.com>",
+              "Author: Gael Alves <gaelalves.business@gmail.com>",
               "Date:   Sat Jun 7 2026",
               "",
               "    Add macOS desktop simulation",

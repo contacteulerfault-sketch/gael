@@ -1,6 +1,7 @@
 import useWindowsStore from "@store/window";
 import { GithubIcon, BookMarkedIcon } from "../../data/settingsData";
 import OwnerAvatar from "@module/shared/ui/components/OwnerAvatar";
+import { OWNER_LOCATION } from "@constants";
 
 const SettingsAppleIDSection = ({ githubData }) => {
   const { setGithubRedirect } = useWindowsStore();
@@ -76,7 +77,7 @@ const SettingsAppleIDSection = ({ githubData }) => {
           <div className="flex items-center justify-between p-3 px-4 gap-4">
             <span className="text-[13px] text-gray-700 shrink-0">Location</span>
             <span className="text-[13px] font-medium text-gray-900 text-right break-words flex-1 min-w-0">
-              {githubData.profile.location || "United Kingdom"}
+              {githubData.profile.location || OWNER_LOCATION}
             </span>
           </div>
         </div>

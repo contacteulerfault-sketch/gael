@@ -1,4 +1,4 @@
-import { GITHUB_PROFILE, PORTFOLIO_URL } from "./env";
+import { GITHUB_PROFILE, LINKEDIN_URL, PORTFOLIO_URL, WHATSAPP_URL } from "./env";
 
 export const socials = [
   {
@@ -11,6 +11,22 @@ export const socials = [
   },
   {
     id: 2,
+    text: "LinkedIn",
+    icon: "/icons/linkedin.svg",
+    bg: "#0a66c2",
+    link: LINKEDIN_URL,
+    img: "/images/linkedin.webp",
+  },
+  {
+    id: 3,
+    text: "WhatsApp",
+    icon: "/icons/whatsapp.svg",
+    bg: "#25d366",
+    link: WHATSAPP_URL,
+    img: "/icons/whatsapp.svg",
+  },
+  {
+    id: 4,
     text: "Portfolio",
     icon: "/icons/atom.svg",
     bg: "#4bcb63",

@@ -33,7 +33,7 @@ const AboutPortfolioModal = ({ show, onClose }) => {
         <div className="flex-1 flex flex-col items-center justify-center mt-3 text-center">
           <OwnerAvatar size={64} alt="Portfolio owner" className="drop-shadow-md" />
           <h1 className="text-[15px] font-bold text-gray-900 mt-3 select-none leading-tight">
-            Euler's Portfolio
+            Gael's Portfolio
           </h1>
           <p className="text-[10px] text-gray-500 font-semibold select-none mt-0.5">
             Version 2.0 (Ventura Layout)
@@ -42,7 +42,7 @@ const AboutPortfolioModal = ({ show, onClose }) => {
 
         {/* Footer/Copyright */}
         <div className="text-center text-[8.5px] text-gray-400/90 leading-tight mb-2 select-none">
-          <p>Copyright © 2026 Euler William Robert.</p>
+          <p>Copyright © 2026 Gael Alves.</p>
           <p>All rights reserved.</p>
         </div>
       </div>

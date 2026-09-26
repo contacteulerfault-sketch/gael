@@ -181,9 +181,9 @@ const TelegramSection = ({
   // Mock Contacts List
   const contacts = [
     {
-      name: "Euler (Developer)",
-      id: "euler",
-      initials: "EW",
+      name: "Gael (Developer)",
+      id: "gael",
+      initials: "GA",
       status: "online",
       color: "bg-gradient-to-tr from-blue-500 to-indigo-600",
       avatar: "/images/owner-avatar.webp",

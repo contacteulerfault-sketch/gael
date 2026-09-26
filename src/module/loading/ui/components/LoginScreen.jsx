@@ -12,6 +12,7 @@ import {
   Shield,
 } from "lucide-react";
 import OwnerAvatar from "@module/shared/ui/components/OwnerAvatar";
+import WallpaperLocationBadge from "@module/shared/ui/components/WallpaperLocationBadge";
 import { formatOwnerDate, formatOwnerTime } from "@store/time";
 
 const LoginScreen = ({ onLogin, isMobile }) => {
@@ -229,7 +230,7 @@ const LoginScreen = ({ onLogin, isMobile }) => {
         className="fixed inset-0 z-50 flex flex-col items-center justify-between text-white select-none overflow-hidden"
         style={{
           backgroundImage:
-            "image-set(url('/images/mobile-wallpaper-uk.webp') type('image/webp'), url('/images/mobile-wallpaper-uk.png'))",
+            "image-set(url('/images/mobile-wallpaper-brazil.webp?v=20260919') type('image/webp'), url('/images/mobile-wallpaper-brazil.png?v=20260919'))",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -287,6 +288,7 @@ const LoginScreen = ({ onLogin, isMobile }) => {
               <h1 className="text-white text-8xl font-semibold tracking-tighter drop-shadow-lg mt-0.5">
                 {time}
               </h1>
+              <WallpaperLocationBadge className="mt-5" />
             </div>
 
             {/* Notification preview (iOS Widget style) */}
@@ -298,7 +300,7 @@ const LoginScreen = ({ onLogin, isMobile }) => {
                   <span className="text-[9px] text-white/50 font-medium">now</span>
                 </div>
                 <p className="text-[11px] text-white/95 leading-normal mt-0.5 truncate font-semibold">
-                  Euler William Robert's Portfolio
+                  Gael's Portfolio
                 </p>
                 <p className="text-[10px] text-white/60 leading-normal truncate">
                   Swipe up or Tap to view portfolio. Passcode is {new Date().getFullYear()}.
@@ -673,6 +675,7 @@ const LoginScreen = ({ onLogin, isMobile }) => {
               <h1 className="text-white text-7xl sm:text-8xl font-light tracking-tighter drop-shadow-lg mt-1 select-text">
                 {time}
               </h1>
+              <WallpaperLocationBadge className="mt-5" />
             </div>
 
             {/* Central Animated SVG Greeting */}
@@ -735,7 +738,7 @@ const LoginScreen = ({ onLogin, isMobile }) => {
                 <div className="flex flex-col items-center">
                   <OwnerAvatar size={112} tone="dark" className="mb-4 shadow-lg" />
                   <h1 className="text-white text-2xl font-medium tracking-wide mb-6 drop-shadow-md">
-                    Euler William Robert
+                    Gael Alves
                   </h1>
 
                   <form

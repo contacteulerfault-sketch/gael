@@ -1,3 +1,5 @@
+import { PHONE } from "@constants";
+
 export const INITIAL_CHATS = [
   {
     id: "bot",
@@ -28,16 +30,16 @@ export const INITIAL_CHATS = [
     ],
   },
   {
-    id: "euler",
-    name: "Euler (Developer)",
+    id: "gael",
+    name: "Gael (Developer)",
     type: "user",
     avatar: "/images/owner-avatar.webp",
     avatarColor: "bg-gradient-to-tr from-blue-500 to-indigo-600",
-    initials: "EW",
+    initials: "GA",
     status: "online",
-    username: "@eulerwilliamrobert",
+    username: "@gaelalves",
     bio: "Full Stack Engineer | React, Next.js, Node.js & TypeScript enthusiast.",
-    phone: "+91 ••••• •••••",
+    phone: PHONE,
     messages: [
       {
         id: 1,
@@ -94,7 +96,7 @@ export const INITIAL_CHATS = [
     avatarColor: "bg-gradient-to-tr from-purple-500 to-pink-600",
     initials: "PU",
     status: "1,240 subscribers",
-    username: "@euler_updates",
+    username: "@gael_updates",
     bio: "Official channel for release logs, new features, and design updates on this macOS portfolio project.",
     phone: "None",
     messages: [

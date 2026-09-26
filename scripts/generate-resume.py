@@ -67,9 +67,9 @@ def section(title):
     y -= 16
 
 
-centered("Euler William Robert", "F2", 22, 6)
+centered("Gael Alves", "F2", 22, 6)
 centered("Full-Stack Developer", "F1", 12, 4)
-centered("United Kingdom  |  contacteulerfault@gmail.com", "F1", 9.5, 10)
+centered("Rio de Janeiro, Brazil  |  gaelalves.business@gmail.com", "F1", 9.5, 10)
 
 section("Summary")
 summary = (

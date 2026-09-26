@@ -30,7 +30,7 @@ const TerminalInput = ({ terminalRef, xtermRef, fitAddonRef, commandRef }) => {
     };
 
     const prompt = () => {
-      term.write("\r\n\x1b[1;32meuler@macbook ~ %\x1b[0m ");
+      term.write("\r\n\x1b[1;32mgael@macbook ~ %\x1b[0m ");
     };
 
     if (cmd === "clear") {
@@ -92,10 +92,10 @@ const TerminalInput = ({ terminalRef, xtermRef, fitAddonRef, commandRef }) => {
         });
         break;
       case "whoami":
-        println("\x1b[38;2;75;85;99meuler\x1b[0m");
+        println("\x1b[38;2;75;85;99mgael\x1b[0m");
         break;
       case "sudo":
-        println("\x1b[31meuler is not in the sudoers file. This incident will be reported.\x1b[0m");
+        println("\x1b[31mgael is not in the sudoers file. This incident will be reported.\x1b[0m");
         break;
       default:
         println(`\x1b[31mzsh: command not found: ${baseCmd}\x1b[0m`);
@@ -188,7 +188,7 @@ const TerminalInput = ({ terminalRef, xtermRef, fitAddonRef, commandRef }) => {
 
     const setupHandlers = (t) => {
       const prompt = () => {
-        t.write("\r\n\x1b[1;32meuler@macbook ~ %\x1b[0m ");
+        t.write("\r\n\x1b[1;32mgael@macbook ~ %\x1b[0m ");
       };
 
       const println = (msg) => {
@@ -249,11 +249,11 @@ const TerminalInput = ({ terminalRef, xtermRef, fitAddonRef, commandRef }) => {
               println(new Date().toString());
               break;
             case "whoami":
-              println("\x1b[38;2;75;85;99meuler\x1b[0m");
+              println("\x1b[38;2;75;85;99mgael\x1b[0m");
               break;
             case "sudo":
               println(
-                "\x1b[31meuler is not in the sudoers file. This incident will be reported.\x1b[0m",
+                "\x1b[31mgael is not in the sudoers file. This incident will be reported.\x1b[0m",
               );
               break;
             case "techstack":

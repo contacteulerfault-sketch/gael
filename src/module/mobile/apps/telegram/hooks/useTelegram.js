@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { INITIAL_CHATS } from "../data";
+import { EMAIL, PHONE } from "@constants";
 
 const useTelegram = () => {
   const [chats, setChats] = useState(() => {
@@ -32,10 +33,10 @@ const useTelegram = () => {
   const [drawerSection, setDrawerSection] = useState("settings");
 
   const [userProfile, setUserProfile] = useState({
-    name: "Euler William Robert",
-    username: "@eulerwilliamrobert",
+    name: "Gael Alves",
+    username: "@gaelalves",
     bio: "Full Stack Engineer | React, Next.js, Node.js & TypeScript enthusiast.",
-    phone: "+91 ••••• •••••",
+    phone: PHONE,
   });
 
   const [newGroupName, setNewGroupName] = useState("");
@@ -61,12 +62,12 @@ const useTelegram = () => {
     }
     return [
       {
-        name: "Euler (Developer)",
+        name: "Gael (Developer)",
         type: "outgoing",
         time: "Yesterday, 2:14 PM",
         missed: false,
         avatarColor: "bg-gradient-to-tr from-blue-500 to-indigo-600",
-        initials: "EW",
+        initials: "GA",
         avatar: "/images/owner-avatar.webp",
       },
       {
@@ -271,7 +272,7 @@ const useTelegram = () => {
 
         if (cmd.includes("/start")) {
           reply =
-            "Hello! I am your Telegram assistant. Type `/projects`, `/skills`, or `/contact` to browse Euler's portfolio.";
+            "Hello! I am your Telegram assistant. Type `/projects`, `/skills`, or `/contact` to browse Gael's portfolio.";
         } else if (cmd.includes("/project")) {
           reply =
             "Here are some top projects:\n1. **NewTube**: Video platform built with Next.js, Mux & PostgreSQL.\n2. **Insta Things Download**: Instagram media downloader tool.\n3. **Resume ATS Scanner**: ATS CV scoring app.\n4. **Docs Editor**: Live rich-text document collaboration.";
@@ -279,7 +280,7 @@ const useTelegram = () => {
           reply =
             "Core Stack:\n• **Frontend**: React, Next.js, TypeScript\n• **Styling**: CSS, Sass, Tailwind CSS\n• **Backend**: Node.js, Express, Bun, tRPC\n• **Databases**: PostgreSQL, MongoDB\n• **Tools**: Git, GitHub, Docker";
         } else if (cmd.includes("/contact")) {
-          reply = "Get in touch:\n• Email: contacteulerfault@gmail.com";
+          reply = `Get in touch:\n• Email: ${EMAIL}\n• WhatsApp: ${PHONE}`;
         } else if (cmd.includes("/help")) {
           reply =
             "Available Commands:\n• `/start` - Start the helper\n• `/projects` - List developer projects\n• `/skills` - View technical skill list\n• `/contact` - Get direct emails/socials";
@@ -308,7 +309,7 @@ const useTelegram = () => {
           ),
         );
       }, 1500);
-    } else if (activeChat.id === "euler") {
+    } else if (activeChat.id === "gael") {
       setIsTyping(true);
       setTimeout(() => {
         setIsTyping(false);
@@ -328,12 +329,12 @@ const useTelegram = () => {
           normalized.includes("work")
         ) {
           reply =
-            "I'm currently open to new roles and freelancing opportunities! Let's schedule a call. Drop me a line at contacteulerfault@gmail.com.";
+            `I'm currently open to new roles and freelancing opportunities! Let's schedule a call. WhatsApp me at ${PHONE} or email ${EMAIL}.`;
         }
 
         setChats((prev) =>
           prev.map((c) =>
-            c.id === "euler"
+            c.id === "gael"
               ? {
                   ...c,
                   messages: [

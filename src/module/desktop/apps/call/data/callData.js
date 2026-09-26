@@ -9,8 +9,8 @@ export const CONTACTS = [
     callPreview: "/images/contacts/Bhavesh.webp",
   },
   {
-    id: "euler",
-    name: "Euler William Robert",
+    id: "gael",
+    name: "Gael Alves",
     status: "My Profile",
     available: true,
     avatar: "/images/owner-avatar.webp",

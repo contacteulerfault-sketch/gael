@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { OWNER_TIMEZONE_LABEL } from "@constants";
 import {
   Smartphone,
   RefreshCw,
@@ -59,7 +60,7 @@ const SettingsGeneralPane = () => {
           <div className="bg-white rounded-2xl border border-black/5 overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.02)] divide-y divide-zinc-100">
             <div className="flex items-center justify-between p-3.5 pl-4">
               <span className="text-[14px] font-semibold text-gray-700">Name</span>
-              <span className="text-[14px] font-bold text-gray-900">iPhone (Euler)</span>
+              <span className="text-[14px] font-bold text-gray-900">iPhone (Gael)</span>
             </div>
             <div className="flex items-center justify-between p-3.5 pl-4">
               <span className="text-[14px] font-semibold text-gray-700">iOS Version</span>
@@ -244,7 +245,7 @@ const SettingsGeneralPane = () => {
         <div className="bg-white border border-black/5 rounded-2xl p-4 shadow-[0_1px_3px_rgba(0,0,0,0.02)] text-xs text-gray-650 space-y-2.5">
           <div className="flex justify-between">
             <span className="text-gray-400 font-semibold">Time Zone</span>
-            <span className="text-gray-700 font-semibold">London, United Kingdom (GMT/BST)</span>
+            <span className="text-gray-700 font-semibold">{OWNER_TIMEZONE_LABEL}</span>
           </div>
           <div className="flex justify-between">
             <span className="text-gray-400 font-semibold">Source Server</span>

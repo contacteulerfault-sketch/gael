@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { INITIAL_CONVERSATIONS } from "../data";
+import { EMAIL, PHONE } from "@constants";
 
 const useMessages = () => {
   const [conversations, setConversations] = useState(() => {
@@ -34,11 +35,11 @@ const useMessages = () => {
 
   const [pinnedChats, setPinnedChats] = useState(() => {
     const saved = localStorage.getItem("macos_portfolio_pinned_messages");
-    return saved ? JSON.parse(saved) : ["euler"];
+    return saved ? JSON.parse(saved) : ["gael"];
   });
 
   const [activeCategory, setActiveCategory] = useState("all"); // "all", "unread", "muted"
-  const [activeChatId, setActiveChatId] = useState("euler");
+  const [activeChatId, setActiveChatId] = useState("gael");
   const [inputText, setInputText] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -179,8 +180,8 @@ const useMessages = () => {
         ),
       );
 
-      // Euler chatbot reply triggers
-      if (activeChat.id === "euler") {
+      // Gael chatbot reply triggers
+      if (activeChat.id === "gael") {
         setIsTyping(true);
         setTimeout(() => {
           setIsTyping(false);
@@ -195,7 +196,7 @@ const useMessages = () => {
           };
           setConversations((prev) =>
             prev.map((c) =>
-              c.id === "euler" ? { ...c, messages: [...c.messages, replyMessage] } : c,
+              c.id === "gael" ? { ...c, messages: [...c.messages, replyMessage] } : c,
             ),
           );
         }, 1200);
@@ -223,7 +224,7 @@ const useMessages = () => {
     const userMsg = inputText.toLowerCase();
     setInputText("");
 
-    if (activeChat.id === "euler") {
+    if (activeChat.id === "gael") {
       setIsTyping(true);
       setTimeout(() => {
         setIsTyping(false);
@@ -241,9 +242,11 @@ const useMessages = () => {
         } else if (
           userMsg.includes("contact") ||
           userMsg.includes("mail") ||
-          userMsg.includes("hire")
+          userMsg.includes("hire") ||
+          userMsg.includes("whatsapp") ||
+          userMsg.includes("phone")
         ) {
-          replyText = "You can contact me via email at contacteulerfault@gmail.com!";
+          replyText = `You can WhatsApp me at ${PHONE} or email ${EMAIL}!`;
         } else if (userMsg.includes("hello") || userMsg.includes("hi") || userMsg.includes("hey")) {
           replyText =
             "Hey there! Hope you are enjoying the macOS portfolio. How can I help you today?";
@@ -258,7 +261,7 @@ const useMessages = () => {
 
         setConversations((prev) =>
           prev.map((c) =>
-            c.id === "euler" ? { ...c, messages: [...c.messages, replyMessage] } : c,
+            c.id === "gael" ? { ...c, messages: [...c.messages, replyMessage] } : c,
           ),
         );
       }, 1200);

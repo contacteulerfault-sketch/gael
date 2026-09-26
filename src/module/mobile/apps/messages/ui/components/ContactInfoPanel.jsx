@@ -30,7 +30,7 @@ const ContactInfoPanel = ({ activeChat, mutedChats, onToggleMute, onTriggerCall,
         </div>
         <h3 className="font-bold text-gray-900 text-lg mt-3.5 leading-tight">{activeChat.name}</h3>
         <span className="text-xs text-gray-400 mt-1 truncate max-w-[240px]">
-          {activeChat.email || "contacteulerfault@gmail.com"}
+          {activeChat.email || "gaelalves.business@gmail.com"}
         </span>
       </div>
 

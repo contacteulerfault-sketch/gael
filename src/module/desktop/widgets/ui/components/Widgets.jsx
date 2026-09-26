@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Draggable } from "gsap/Draggable";
 import useTimeStore from "@store/time";
+import WallpaperLocationBadge from "@module/shared/ui/components/WallpaperLocationBadge";
 
 // Combined Time & Calendar Widget
 const ClockCalendarWidget = () => {
@@ -118,6 +119,9 @@ const DesktopWidgets = () => {
     <div
       className={`absolute inset-0 pointer-events-none z-0 ${isAnyWindowOpen ? "desktop-dimmed" : ""}`}
     >
+      <div className="absolute top-[72px] left-1/2 -translate-x-1/2">
+        <WallpaperLocationBadge />
+      </div>
       <div
         ref={widgetRef}
         className="widget-container widget-large"

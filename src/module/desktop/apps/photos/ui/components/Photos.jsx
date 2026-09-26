@@ -9,7 +9,7 @@ import PhotosAboutModal from "./PhotosAboutModal";
 const enrichedGallery = gallery.map((item) => {
   let title = "Untitled";
   let date = "May 20, 2026";
-  let location = "San Francisco, CA";
+  let location = "Rio de Janeiro, Brazil";
   let camera = "iPhone 15 Pro";
   let exposure = "1/120s f/1.8 ISO 125";
   let lens = "24mm (equivalent)";
@@ -18,9 +18,9 @@ const enrichedGallery = gallery.map((item) => {
 
   if (item.category === "Library") {
     if (item.id === 1) {
-      title = "Pacific Sunset";
+      title = "Copacabana Sunset";
       date = "October 14, 2025";
-      location = "Golden Gate, San Francisco";
+      location = "Copacabana, Rio de Janeiro";
       camera = "Sony α7R V";
       exposure = "1/250s f/4.0 ISO 100";
       lens = "70-200mm F2.8 GM OSS II";
@@ -29,7 +29,7 @@ const enrichedGallery = gallery.map((item) => {
     } else if (item.id === 2) {
       title = "Morning Coffee & Code";
       date = "February 12, 2026";
-      location = "Oakland Cafe, CA";
+      location = "Santa Teresa, Rio de Janeiro";
       camera = "iPhone 15 Pro Max";
       exposure = "1/60s f/1.78 ISO 400";
       lens = "24mm Main Camera";
@@ -45,9 +45,9 @@ const enrichedGallery = gallery.map((item) => {
       size = "18.1 MB";
       resolution = "9504 × 6336";
     } else {
-      title = "Scenic Highway 1";
+      title = "Ipanema Shoreline";
       date = "April 29, 2026";
-      location = "Big Sur, California";
+      location = "Ipanema, Rio de Janeiro";
       camera = "iPhone 15 Pro";
       exposure = "1/1000s f/2.2 ISO 50";
       lens = "13mm Ultra Wide";
@@ -64,7 +64,7 @@ const enrichedGallery = gallery.map((item) => {
     ];
     title = memoryTitles[(item.id - 5) % memoryTitles.length] || "Memory Trip";
     date = `July ${10 + (item.id % 5)}, 2024`;
-    location = "Maui, Hawaii";
+    location = "Florianópolis, Brazil";
     camera = "GoPro Hero 12";
     exposure = "1/400s f/2.5 ISO 100";
     lens = "Wide Lens";
@@ -72,18 +72,20 @@ const enrichedGallery = gallery.map((item) => {
     resolution = "5568 × 4872";
   } else if (item.category === "Places") {
     const places = [
-      "Yosemite Valley",
-      "Grand Canyon Lookout",
-      "Venice Rialto Bridge",
-      "Swiss Alps Peaks",
+      "Christ the Redeemer",
+      "Iguaçu Falls",
+      "Pelourinho Salvador",
+      "Lençóis Maranhenses",
     ];
     title = places[item.id % 4] || "Nature Escape";
     date = "September 18, 2025";
-    location = title.includes("Venice")
-      ? "Venice, Italy"
-      : title.includes("Swiss")
-        ? "Zermatt, Switzerland"
-        : "Yosemite Park, CA";
+    location = title.includes("Iguaçu")
+      ? "Foz do Iguaçu, Brazil"
+      : title.includes("Pelourinho")
+        ? "Salvador, Bahia"
+        : title.includes("Lençóis")
+          ? "Barreirinhas, Maranhão"
+          : "Corcovado, Rio de Janeiro";
     camera = "Fujifilm X-T5";
     exposure = "1/500s f/5.6 ISO 160";
     lens = "XF 18-55mm F2.8-4 R LM OIS";
@@ -98,7 +100,7 @@ const enrichedGallery = gallery.map((item) => {
     ];
     title = people[item.id % 4] || "Portrait";
     date = "November 23, 2025";
-    location = "San Jose, CA";
+    location = "Rio de Janeiro, Brazil";
     camera = "Canon EOS R5";
     exposure = "1/200s f/1.2 ISO 200";
     lens = "RF 85mm F1.2L USM";

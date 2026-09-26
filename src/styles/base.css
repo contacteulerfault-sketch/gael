@@ -52,8 +52,8 @@ body {
   overflow: hidden;
   height: 100dvh;
   background-image: image-set(
-    url("/images/wallpapers/wallpaper-uk.webp") type("image/webp"),
-    url("/images/wallpapers/wallpaper-uk.png")
+    url("/images/wallpapers/wallpaper-brazil.webp?v=20260919") type("image/webp"),
+    url("/images/wallpapers/wallpaper-brazil.png?v=20260919")
   );
   background-size: cover;
   background-repeat: no-repeat;
@@ -70,8 +70,8 @@ body {
 @media (max-width: 767px) {
   body {
     background-image: image-set(
-      url("/images/mobile-wallpaper-uk.webp") type("image/webp"),
-      url("/images/mobile-wallpaper-uk.png")
+      url("/images/mobile-wallpaper-brazil.webp?v=20260919") type("image/webp"),
+      url("/images/mobile-wallpaper-brazil.png?v=20260919")
     ) !important;
   }
 }

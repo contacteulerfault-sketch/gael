@@ -11,7 +11,7 @@ export default function Portfolio() {
       <header className="sticky top-0 z-50 w-full py-4 border-b border-zinc-900 bg-[#0a0a0a]/80 backdrop-blur-md px-8 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <span className="w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse" />
-          <span className="font-bold text-sm tracking-tight text-white uppercase">Euler William Robert</span>
+          <span className="font-bold text-sm tracking-tight text-white uppercase">Gael Alves</span>
         </div>
         <nav className="flex gap-6 text-xs font-semibold text-zinc-400">
           <a href="#projects" className="hover:text-white transition-colors">Projects</a>
@@ -29,7 +29,7 @@ export default function Portfolio() {
 
       {/* Footer */}
       <footer className="py-8 border-t border-zinc-900 text-center text-xs text-zinc-500">
-        <p>© 2026 Euler William Robert. Built with Next.js, React & Tailwind CSS.</p>
+        <p>© 2026 Gael Alves. Built with Next.js, React & Tailwind CSS.</p>
       </footer>
     </div>
   );
@@ -46,18 +46,18 @@ export default function Hero() {
         I build modern, scalable web applications
       </h1>
       <p className="text-base text-zinc-400 leading-relaxed max-w-2xl">
-        I am <span className="text-white font-medium">Euler William Robert</span>. I help clients build websites, online stores, dashboards, and API integrations with Shopify, WordPress, WooCommerce, React, Next.js, Node.js, PHP, and Laravel.
+        I am <span className="text-white font-medium">Gael Alves</span>. I help clients build websites, online stores, dashboards, and API integrations with Shopify, WordPress, WooCommerce, React, Next.js, Node.js, PHP, and Laravel.
       </p>
       <div className="flex flex-wrap gap-4 pt-2">
         <a 
-          href="mailto:contacteulerfault@gmail.com" 
+          href="mailto:gaelalves.business@gmail.com" 
           target="_blank" 
           className="px-5 py-2.5 bg-white text-black hover:bg-zinc-200 rounded-xl text-xs font-bold transition-all shadow-lg active:scale-95"
         >
           Schedule Call
         </a>
         <a 
-          href="mailto:contacteulerfault@gmail.com" 
+          href="mailto:gaelalves.business@gmail.com" 
           className="px-5 py-2.5 bg-zinc-900 text-white hover:bg-zinc-800 border border-zinc-800 rounded-xl text-xs font-bold transition-all active:scale-95"
         >
           Send Email
@@ -147,8 +147,8 @@ export default function AboutMe() {
         <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider">Social Channels</h3>
         <h4 className="text-sm font-bold text-white uppercase">Let's Connect</h4>
         <div className="flex flex-col gap-2 pt-1">
-          <a href="mailto:contacteulerfault@gmail.com" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1.5">
-            ✉️ contacteulerfault@gmail.com
+          <a href="mailto:gaelalves.business@gmail.com" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1.5">
+            ✉️ gaelalves.business@gmail.com
           </a>
         </div>
       </div>
@@ -179,7 +179,7 @@ module.exports = {
   plugins: [],
 }`,
   "package.json": `{
-  "name": "euler-portfolio",
+  "name": "gael-portfolio",
   "private": true,
   "version": "2.0.0",
   "type": "module",
@@ -206,7 +206,7 @@ module.exports = {
   ".env": `NEXT_PUBLIC_GROQ_API_KEY=gsk_mock_key_12345
 PORT=3000
 NODE_ENV=development`,
-  "README.md": `# Euler William Robert - Portfolio
+  "README.md": `# Gael Alves - Portfolio
 
 This is my personal developer portfolio built with React, Next.js, and Tailwind CSS. It highlights my full-stack web applications, tech stack, and digital writing.
 

@@ -75,7 +75,7 @@ const NavbarControlCenterSection = ({
   const wifiNetworksList = [
     { name: "Home Network", locked: true, strength: "strong" },
     { name: "Coffee Shop 5G", locked: true, strength: "medium" },
-    { name: "iPhone (Euler)", locked: true, strength: "strong" },
+    { name: "iPhone (Gael)", locked: true, strength: "strong" },
     { name: "Airport Free WiFi", locked: false, strength: "weak" },
   ];
 
@@ -741,7 +741,7 @@ const NavbarControlCenterSection = ({
                         >
                           {currentUserMode === "admin"
                             ? "Launch Guest Mode"
-                            : "Switch back to Admin (Euler)"}
+                            : "Switch back to Admin (Gael)"}
                         </button>
                       </div>
                     </div>

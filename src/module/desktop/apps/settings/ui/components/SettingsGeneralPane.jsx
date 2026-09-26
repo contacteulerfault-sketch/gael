@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import useWindowsStore from "@store/window";
+import { OWNER_TIMEZONE_LABEL } from "@constants";
 import {
   Monitor,
   RefreshCw,
@@ -28,7 +29,7 @@ const SettingsGeneralPane = () => {
 
   // Date & Time state
   const [autoTime, setAutoTime] = useState(true);
-  const [timeZone, _setTimeZone] = useState("London, United Kingdom (GMT/BST)");
+  const [timeZone, _setTimeZone] = useState(OWNER_TIMEZONE_LABEL);
 
   const checkUpdates = () => {
     if (checkingUpdate) return;

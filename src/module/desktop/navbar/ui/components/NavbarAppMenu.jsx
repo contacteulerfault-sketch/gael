@@ -1,6 +1,14 @@
 import { useState, useEffect, useRef } from "react";
 import useWindowsStore from "@store/window";
-import { GITHUB_PROFILE, PROJECT_3_URL, PROJECT_4_URL, EMAIL, RESUME_FILE } from "@constants";
+import {
+  GITHUB_PROFILE,
+  LINKEDIN_URL,
+  WHATSAPP_URL,
+  PROJECT_3_URL,
+  PROJECT_4_URL,
+  EMAIL,
+  RESUME_FILE,
+} from "@constants";
 
 const NavbarAppMenu = ({ activeAppName, openWindow, isAppleMenuOpen, setIsAppleMenuOpen }) => {
   const { setAboutPortfolioOpen, setWindowData, windows } = useWindowsStore();
@@ -112,7 +120,7 @@ const NavbarAppMenu = ({ activeAppName, openWindow, isAppleMenuOpen, setIsAppleM
               openWindow("map", { openAbout: true });
             } else if (activeAppName === "Font Book") {
               openWindow("font", { openAbout: true });
-            } else if (activeAppName === "Euler's Portfolio") {
+            } else if (activeAppName === "Gael's Portfolio") {
               setAboutPortfolioOpen(true);
             } else {
               openWindow("settings", { tab: "General" });
@@ -148,7 +156,7 @@ const NavbarAppMenu = ({ activeAppName, openWindow, isAppleMenuOpen, setIsAppleM
               openWindow("settings", { tab: "General", subPage: "storage" });
             } else if (activeAppName === "Settings") {
               openWindow("settings", { tab: "Apple ID" });
-            } else if (activeAppName === "Euler's Portfolio") {
+            } else if (activeAppName === "Gael's Portfolio") {
               openWindow("settings", { tab: "General", subPage: "about" });
             } else {
               openWindow("settings");
@@ -226,15 +234,33 @@ const NavbarAppMenu = ({ activeAppName, openWindow, isAppleMenuOpen, setIsAppleM
             mailtoLink.click();
           },
         },
+        ...(WHATSAPP_URL
+          ? [
+              {
+                label: "Message on WhatsApp",
+                onClick: () => openWindow("safari", { url: WHATSAPP_URL }),
+              },
+            ]
+          : []),
       ],
-      GITHUB_PROFILE
-        ? [
-            {
-              label: "View GitHub Profile",
-              onClick: () => openWindow("safari", { url: GITHUB_PROFILE }),
-            },
-          ]
-        : [],
+      [
+        ...(GITHUB_PROFILE
+          ? [
+              {
+                label: "View GitHub Profile",
+                onClick: () => openWindow("safari", { url: GITHUB_PROFILE }),
+              },
+            ]
+          : []),
+        ...(LINKEDIN_URL
+          ? [
+              {
+                label: "View LinkedIn Profile",
+                onClick: () => openWindow("safari", { url: LINKEDIN_URL }),
+              },
+            ]
+          : []),
+      ].filter(Boolean),
     ],
     resume: [
       [
@@ -250,7 +276,7 @@ const NavbarAppMenu = ({ activeAppName, openWindow, isAppleMenuOpen, setIsAppleM
           onClick: () => {
             const link = document.createElement("a");
             link.href = RESUME_FILE;
-            link.download = "Euler_William_Robert_Resume.pdf";
+            link.download = "Gael_Alves_Resume.pdf";
             link.click();
           },
         },

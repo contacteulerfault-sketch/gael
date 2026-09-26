@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { INITIAL_CONVERSATIONS } from "../data/messagesData";
+import { EMAIL, PHONE } from "@constants";
 
 const useMessages = () => {
   const [conversations, setConversations] = useState(() => {
@@ -25,7 +26,7 @@ const useMessages = () => {
     return INITIAL_CONVERSATIONS;
   });
 
-  const [activeChatId, setActiveChatId] = useState("euler");
+  const [activeChatId, setActiveChatId] = useState("gael");
   const [inputText, setInputText] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -142,13 +143,13 @@ const useMessages = () => {
     setInputText("");
 
     const chatId = activeChat.id;
-    if (chatId === "euler" || chatId === "thomas" || chatId === "james") {
+    if (chatId === "gael" || chatId === "thomas" || chatId === "james") {
       setIsTyping(true);
       setTimeout(() => {
         setIsTyping(false);
         let replyText = "";
 
-        if (chatId === "euler") {
+        if (chatId === "gael") {
           replyText = "That's cool! Feel free to explore other apps in the dock too.";
           if (userMsg.includes("project")) {
             replyText =
@@ -163,10 +164,12 @@ const useMessages = () => {
           } else if (
             userMsg.includes("contact") ||
             userMsg.includes("mail") ||
-            userMsg.includes("hire")
+            userMsg.includes("hire") ||
+            userMsg.includes("whatsapp") ||
+            userMsg.includes("phone")
           ) {
             replyText =
-              "You can contact me via email at contacteulerfault@gmail.com, or check out my GitHub in the Safari app!";
+              `You can WhatsApp me at ${PHONE}, email ${EMAIL}, or check out my GitHub in the Safari app!`;
           } else if (
             userMsg.includes("hello") ||
             userMsg.includes("hi") ||

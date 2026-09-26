@@ -8,11 +8,13 @@ import {
   PROJECT_3_URL,
   PROJECT_4_URL,
   GITHUB_PROFILE,
+  LINKEDIN_URL,
+  WHATSAPP_URL,
   PORTFOLIO_URL,
+  OWNER_NAME,
+  OWNER_LOCATION,
 } from "@constants";
 import { formatOwnerDate, formatOwnerTime } from "@store/time";
-
-const OWNER_NAME = "Euler William Robert";
 
 const FALLBACK_PROJECT_LINKS = {
   newtube: PROJECT_1_URL,
@@ -23,6 +25,8 @@ const FALLBACK_PROJECT_LINKS = {
 
 const FALLBACK_SOCIAL_LINKS = {
   github: GITHUB_PROFILE,
+  linkedin: LINKEDIN_URL,
+  whatsapp: WHATSAPP_URL,
   portfolio: PORTFOLIO_URL,
 };
 
@@ -71,7 +75,7 @@ const APP_ALIASES = {
   safari: ["safari", "browser", "internet", "web"],
   chrome: ["chrome", "google chrome"],
   photos: ["photos", "gallery", "pictures", "images"],
-  contact: ["contact", "contacts", "email", "phone"],
+  contact: ["contact", "contacts", "email", "phone", "whatsapp"],
   terminal: ["terminal", "shell", "bash", "skills terminal"],
   settings: ["settings", "system settings", "preferences", "system preferences"],
   calculator: ["calculator", "calc"],
@@ -212,6 +216,22 @@ const getSocialByQuery = (query) => {
       url:
         socials.find((item) => item.text.toLowerCase().includes("github"))?.link ||
         FALLBACK_SOCIAL_LINKS.github,
+    };
+  }
+  if (containsTerm(query, "linkedin")) {
+    return {
+      name: "LinkedIn",
+      url:
+        socials.find((item) => item.text.toLowerCase().includes("linkedin"))?.link ||
+        FALLBACK_SOCIAL_LINKS.linkedin,
+    };
+  }
+  if (containsTerm(query, "whatsapp")) {
+    return {
+      name: "WhatsApp",
+      url:
+        socials.find((item) => item.text.toLowerCase().includes("whatsapp"))?.link ||
+        FALLBACK_SOCIAL_LINKS.whatsapp,
     };
   }
   if (containsTerm(query, "portfolio website") || containsTerm(query, "website")) {
@@ -461,28 +481,27 @@ const handleLocationCommand = (query, actions) => {
     ]) &&
     !hasAny(query, OPEN_INTENTS)
   ) {
-    return makeResult("I am designed only to answer questions about Euler William Robert.", {
+    return makeResult("I am designed only to answer questions about Gael Alves.", {
       listenAfter: true,
     });
   }
 
-  // Informational queries about Euler
+  // Informational queries about Gael
   if (
     hasAny(query, [
-      "tell me about euler",
-      "tell me about euler william",
-      "tell me about euler william robert",
-      "who is euler",
-      "who is euler william robert",
-      "say about euler",
-      "say about euler william robert",
+      "tell me about gael",
+      "tell me about gael alves",
+      "who is gael",
+      "who is gael alves",
+      "say about gael",
+      "say about gael alves",
     ]) ||
-    query === "euler" ||
-    query === "euler william robert" ||
-    (containsTerm(query, "euler") && !hasAny(query, OPEN_INTENTS))
+    query === "gael" ||
+    query === "gael alves" ||
+    (containsTerm(query, "gael") && !hasAny(query, OPEN_INTENTS))
   ) {
     return makeResult(
-      `${OWNER_NAME} is a freelance full-stack developer based in the United Kingdom. He builds websites, online stores, dashboards, and API integrations with Shopify, WordPress, WooCommerce, React, Next.js, Node.js, PHP, and Laravel.`,
+      `${OWNER_NAME} is a freelance full-stack developer based in ${OWNER_LOCATION}. He builds websites, online stores, dashboards, and API integrations with Shopify, WordPress, WooCommerce, React, Next.js, Node.js, PHP, and Laravel.`,
       { listenAfter: true },
     );
   }
@@ -494,8 +513,8 @@ const handleLocationCommand = (query, actions) => {
       "open about me",
       "open about",
       "about me",
-      "about euler",
-      "about euler william robert",
+      "about gael",
+      "about gael alves",
       "developer profile",
     ])
   ) {
@@ -585,7 +604,7 @@ const handleUtilityQuestion = (query) => {
 
   if (hasAny(query, ["what time is it", "current time", "tell me the time"])) {
     const time = formatOwnerTime();
-    return makeResult(`It is ${time} in the United Kingdom.`, { listenAfter: true });
+    return makeResult(`It is ${time} in ${OWNER_LOCATION}.`, { listenAfter: true });
   }
 
   if (hasAny(query, ["what date is it", "current date", "today's date", "todays date"])) {

@@ -82,7 +82,7 @@ const ChatInput = ({ inputText, onInputChange, onSend, sendAttachment }) => {
           <button
             type="button"
             onClick={() => {
-              sendAttachment("location", "Cupertino, CA");
+              sendAttachment("location", "Rio de Janeiro, Brazil");
               setShowPlusMenu(false);
             }}
             className="w-full text-left py-2 px-3 hover:bg-gray-100 rounded-xl text-xs font-bold text-gray-700 flex items-center gap-2.5 bg-transparent border-none outline-none cursor-pointer"

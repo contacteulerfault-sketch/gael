@@ -6,7 +6,7 @@ const useMap = () => {
     process.env.NEXT_PUBLIC_NOMINATIM_API_URL || "https://nominatim.openstreetmap.org";
 
   const [activeTab, setActiveTab] = useState("explore");
-  const [activeKey, setActiveKey] = useState("london");
+  const [activeKey, setActiveKey] = useState("rio");
   const [searchQuery, setSearchQuery] = useState("");
   const [zoomLevel, setZoomLevel] = useState(13);
   const [mapStyle, setMapStyle] = useState("standard");
@@ -15,7 +15,7 @@ const useMap = () => {
   const currentCity =
     activeKey === "custom" && customPlace
       ? customPlace
-      : PRESET_PLACES[activeKey] || PRESET_PLACES.london;
+      : PRESET_PLACES[activeKey] || PRESET_PLACES.rio;
 
   const handleZoom = (direction) => {
     if (direction === "in") {
