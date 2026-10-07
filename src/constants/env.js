@@ -26,7 +26,7 @@ export const LINKEDIN_URL =
 export const PORTFOLIO_URL = process.env.NEXT_PUBLIC_PORTFOLIO_URL || "";
 export const PORTFOLIO_ALT_URL = process.env.NEXT_PUBLIC_PORTFOLIO_ALT_URL || "";
 export const EMAIL = process.env.NEXT_PUBLIC_EMAIL || "gaelalves.business@gmail.com";
-export const PHONE = process.env.NEXT_PUBLIC_PHONE || "+44 7598 990588";
+export const PHONE = process.env.NEXT_PUBLIC_PHONE || "+1 (986) 273-4637";
 export const WHATSAPP_URL =
   process.env.NEXT_PUBLIC_WHATSAPP_URL ||
   (PHONE ? `https://wa.me/${PHONE.replace(/\D/g, "")}` : "");

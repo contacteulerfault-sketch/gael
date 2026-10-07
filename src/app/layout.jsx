@@ -14,7 +14,7 @@ const GITHUB_PROFILE =
 const LINKEDIN_URL =
   process.env.NEXT_PUBLIC_LINKEDIN_URL || "https://www.linkedin.com/in/gael-alves";
 const EMAIL = process.env.NEXT_PUBLIC_EMAIL || "gaelalves.business@gmail.com";
-const PHONE = process.env.NEXT_PUBLIC_PHONE || "+44 7598 990588";
+const PHONE = process.env.NEXT_PUBLIC_PHONE || "+1 (986) 273-4637";
 const WHATSAPP_URL =
   process.env.NEXT_PUBLIC_WHATSAPP_URL ||
   (PHONE ? `https://wa.me/${PHONE.replace(/\D/g, "")}` : "");
